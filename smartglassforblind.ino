@@ -1,7 +1,3 @@
-/*Modified by
- * Technical team, REES52
- */
-
 #define pingPin 2        //trig pin of sr04
 #define echoPin 3
 
@@ -29,14 +25,7 @@ void loop() {
    duration = pulseIn(echoPin, HIGH);  //check time using pulseIn function
    
    cm = microsecondsToCentimeters(duration);   //functin call to find distance
-   
-  /* Serial.print(cm);
-   Serial.print("cm");
-   Serial.println();
-   delay(100);
-   
-   for debugging
-   */
+
 
    
     if (cm<70&&cm>50) {analogWrite(A3,20000); 
